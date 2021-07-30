@@ -1,0 +1,16 @@
+/* Write your CSS here */
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+  align-items: center;
+}
+
+.button {
+  height: 20px;
+  color: #ff0b37;
+  border: 1px solid #ff0b37;
+  background-color: transparent;
+  margin-left: 5px;
+}

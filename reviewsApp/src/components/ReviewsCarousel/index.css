@@ -1,0 +1,23 @@
+/* Write your code here */
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/reviews-bg.png');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.detailsContainer {
+  text-align: center;
+  width: 60vw;
+}
+.inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  background-color: transparent;
+  border: none;
+}

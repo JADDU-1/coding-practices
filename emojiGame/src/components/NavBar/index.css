@@ -1,0 +1,25 @@
+.nav-container {
+  display: flex;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff33;
+}
+
+.text-icon {
+  display: flex;
+  align-items: center;
+
+  flex-grow: 1;
+}
+
+.image-icon {
+  margin-right: 6px;
+}
+
+.score-container {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

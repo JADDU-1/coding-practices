@@ -1,0 +1,50 @@
+.bg-home {
+  height: 100vh;
+  padding: 10px;
+}
+
+.home-page-inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+.shop-now {
+  background-color: #0967d2;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  outline: none;
+  width: 120px;
+}
+
+.paragraph {
+  color: #64748b;
+  font-size: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+}
+
+.home-page-image {
+  width: 45%;
+  text-align: right;
+}
+
+.man-image {
+}
+
+.home-page-heading {
+  font-size: 50px;
+}

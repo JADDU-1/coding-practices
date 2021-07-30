@@ -1,0 +1,42 @@
+/* Write your code here. */
+.bg-container {
+  background-color: #f1f5f8;
+  padding: 20px;
+  height: 100vw;
+}
+
+.questions {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card-container {
+  border: 1px solid #e4e7eb;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.image {
+  height: 20px;
+}
+
+.heading {
+  color: #cb8805;
+}
+.hor {
+  border: 1px solid #e4e7eb;
+}
+.inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.para {
+  text-align: left;
+}

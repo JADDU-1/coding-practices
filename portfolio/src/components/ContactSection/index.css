@@ -1,0 +1,103 @@
+/* Write your CSS here */
+.contact-bg-container {
+  border: solid 1px #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-heading {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.contact-para {
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.contact-description {
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 400;
+  text-align: left;
+}
+
+.about-button {
+  border-width: 0px;
+  border-radius: 7px;
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #f43f5e;
+  font-weight: bold;
+}
+
+.graduate-skills-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contact-ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.about-ul-skills {
+  list-style: none;
+  margin-left: -40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.img-heading-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -20px;
+}
+
+.list-icon {
+  margin-right: 10px;
+  align-self: center;
+}
+
+.first-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.skills-list {
+  background-color: #ffffff60;
+  color: #f43f5e;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.location {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .contact-bg-container {
+    height: 520px;
+    padding: 20px;
+  }
+}

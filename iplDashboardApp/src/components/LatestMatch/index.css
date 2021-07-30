@@ -1,0 +1,54 @@
+.bg-latest-match {
+  width: 100%;
+  background-color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.first-column {
+  width: 32%;
+  padding: 20px;
+}
+
+.last-column {
+  text-align: right;
+  width: 32%;
+  padding: 20px;
+}
+
+.middle-column {
+  text-align: center;
+  width: 32%;
+  padding: 20px;
+}
+
+.competative-team {
+  height: 200px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .competative-team {
+    height: 80px;
+    text-align: center;
+  }
+  .bg-latest-match {
+  }
+  .first-column {
+    width: 70%;
+    padding: 20px;
+  }
+  .middle-column {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+  }
+  .last-column {
+    text-align: left;
+    flex-grow: 1;
+    padding: 20px;
+  }
+}

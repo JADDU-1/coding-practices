@@ -1,0 +1,29 @@
+/* Write your CSS here */
+.bg-container {
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #07080c;
+}
+
+.innerContainer {
+}
+
+.image {
+  height: 300px;
+}
+
+.button1 {
+  background-color: #0b69ff;
+  color: #ffffff;
+  margin: 2px;
+}
+
+.button {
+  background-color: transparent;
+  color: #ffffff;
+  margin: 2px;
+}

@@ -1,0 +1,36 @@
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+.inner-container {
+  border: 1px solid #bfbfbf;
+  width: 30%;
+  box-shadow: 5px 5px 5px 5px #bfbfbf;
+  border-radius: 10px;
+  padding: 10px;
+}
+.google {
+  height: 150px;
+  margin-bottom: 20px;
+}
+.search-Icon {
+  height: 20px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.inputElement {
+  border: none;
+  flex-grow: 1;
+  height: 30px;
+}
+.list {
+  list-style-type: none;
+  padding: 0px;
+}

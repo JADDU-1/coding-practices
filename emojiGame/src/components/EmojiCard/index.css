@@ -1,0 +1,14 @@
+.button {
+  border: none;
+  padding: 60px;
+  background-color: #ffffff33;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.each-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 11px;
+}

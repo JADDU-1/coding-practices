@@ -1,0 +1,26 @@
+.bg-repo {
+  width: 30%;
+  background-color: #f8f8ff;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.repo-image {
+  height: 100px;
+}
+
+.icons {
+  height: 20px;
+  margin-right: 6px;
+}
+
+.img-text {
+  display: flex;
+  align-items: center;
+}
+
+.heading-name {
+  color: #e73959;
+}

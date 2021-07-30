@@ -1,0 +1,20 @@
+/* Write your CSS here */
+
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.lightMode {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+
+.darkMode {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 20px;
+}

@@ -1,0 +1,51 @@
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.innerContainer {
+  padding: 30px;
+  background-color: #150b3e;
+  width: 60%;
+  border-radius: 20px;
+}
+
+.profile-pic {
+  background-color: #c7d2fe;
+  padding: 40px;
+  border-radius: 40px;
+  color: #7c3aed;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.option-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+.name {
+  font-size: 25px;
+}
+.your-Balance {
+  color: #585076;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+.rupees {
+  color: #585076;
+}
+.account-balance {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,19 @@
+.filter-container {
+  display: flex;
+}
+
+.selector-container {
+  margin-right: 30px;
+}
+
+.label-text {
+  color: #9aa5b1;
+  font-size: 12px;
+}
+
+.selector-styles {
+  border-color: #cbd2d9;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+}

@@ -1,0 +1,39 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.titleAndDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-container {
+  list-style-type: none;
+  padding: 0px;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.person {
+  height: 200px;
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.listItem {
+  width: 100%;
+}
+
+.changeTextColor {
+  color: #9aa5b1;
+}

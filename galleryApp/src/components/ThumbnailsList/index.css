@@ -1,0 +1,11 @@
+.card-container {
+  margin: 6px;
+}
+
+.imageWithopacity {
+  opacity: 0.5;
+}
+
+.imageWithoutopacity {
+  opacity: 1;
+}

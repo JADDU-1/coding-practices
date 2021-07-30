@@ -1,0 +1,31 @@
+.nav-menu {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.list-of-items {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-family: 'Lobster';
+}
+
+/* * {
+  border: 1px solid red;
+} */

@@ -1,0 +1,140 @@
+CommentItem index.css .amber {
+  background-color: #f59e0b;
+}
+
+.blue {
+  background-color: #0b69ff;
+}
+
+.orange {
+  background-color: #f97316;
+}
+
+.emerald {
+  background-color: #10b981;
+}
+
+.teal {
+  background-color: #14b8a6;
+}
+
+.red {
+  background-color: #b91c1c;
+}
+
+.light-blue {
+  background-color: #0ea5e9;
+}
+
+.li-ele {
+  list-style-type: none;
+  border-bottom: solid 1px #7e858e;
+}
+.round {
+  border-radius: 30px;
+  background-color: #f59e0b;
+  color: #ffffff;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.align-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.align-round {
+  display: flex;
+
+  justify-content: flex-start;
+}
+
+.comment-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.heading2 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-right: 20px;
+}
+
+.paragraph {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  color: #64748b;
+  background: none;
+  outline: none;
+  flex-wrap: wrap;
+}
+
+.para5 {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #94a3b8;
+}
+.like-image {
+  margin-right: 30px;
+  height: 22px;
+}
+
+.down-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-delete-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-grow: 1;
+}
+
+.delete-container {
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border-width: 0px;
+}
+
+.like-para {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border-width: 0px;
+  background: none;
+
+  color: #7e858e;
+}
+
+.blue {
+  color: #0ea5e9;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border-width: 0px;
+  background: none;
+}

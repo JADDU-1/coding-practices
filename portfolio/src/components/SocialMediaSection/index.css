@@ -1,0 +1,21 @@
+/* Write your CSS here */
+.socialMedia-container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid 1px #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.app-size {
+  width: 30px;
+}
+
+.social-size {
+  margin-right: 15px;
+}

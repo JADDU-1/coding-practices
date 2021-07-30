@@ -1,0 +1,29 @@
+.bg-container {
+  width: 100vw;
+}
+
+.top-container {
+  /* height: 30vh; */
+  padding: 20px;
+  background: linear-gradient(#180d5b, #2b237c);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heading {
+  color: #ffffff;
+}
+
+.questions-list {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.top-image {
+  width: 40%;
+}
+
+.inner-container {
+  padding: 50px;
+}

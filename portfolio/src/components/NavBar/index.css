@@ -1,0 +1,67 @@
+/* Write your CSS here */
+.nav-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-style: solid;
+  border-radius: 12px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 60px;
+}
+
+.navBar-ul-container {
+  list-style: none;
+  margin-left: -40px;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.icon-name {
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 15px;
+  width: 100px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-radius: 9px;
+}
+
+.highLite {
+  background-color: #ffffff20;
+}
+
+@media (min-width: 768px) {
+  .nav-bg-container {
+    margin-right: 20px;
+    height: 600px;
+    max-width: 200px;
+    margin-bottom: 0px;
+  }
+}

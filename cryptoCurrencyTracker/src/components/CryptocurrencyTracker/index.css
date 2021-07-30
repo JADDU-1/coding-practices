@@ -1,0 +1,21 @@
+.bg-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #00e7ff;
+  text-align: center;
+}
+
+.Inner-container {
+  width: 90%;
+}
+
+.currency-image {
+  width: 100%;
+}

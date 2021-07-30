@@ -1,0 +1,6 @@
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  list-style-type: none;
+}

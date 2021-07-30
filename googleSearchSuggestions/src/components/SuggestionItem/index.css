@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.para {
+  flex-grow: 1;
+}
+
+.arrow {
+  height: 20px;
+}
+.button {
+  border: none;
+  background-color: transparent;
+}

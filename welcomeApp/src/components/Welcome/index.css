@@ -1,0 +1,14 @@
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e293b;
+  height: 100vh;
+}
+.heading {
+  color: #f0bb03;
+}
+
+.para {
+  color: #ffffff;
+}

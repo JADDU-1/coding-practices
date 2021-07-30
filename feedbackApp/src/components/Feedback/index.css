@@ -1,0 +1,33 @@
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #ffeeee, #ffc0bb);
+  height: 100vh;
+}
+.inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+}
+.items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.image {
+  height: 100px;
+}
+.love {
+  width: 20%;
+}
+.item {
+  text-align: center;
+  margin: 10px;
+}
