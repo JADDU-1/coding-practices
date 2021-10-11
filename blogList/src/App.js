@@ -10,7 +10,7 @@ import './App.css'
 
 const App = () => (
   <div className="app-container">
-    <div className="app-card">
+    <div className="responsive-container">
       <Header />
       <div className="app-body">
         <Switch>

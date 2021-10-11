@@ -1,0 +1,41 @@
+/* Write your CSS here */
+.event-item {
+  list-style-type: none;
+  width: 49%;
+  margin-bottom: 20px;
+}
+
+.event-image {
+  width: 99%;
+  height: 99%;
+  border-radius: 16px;
+}
+
+.event-button {
+  width: 100%;
+  height: 80%;
+  border-radius: 16px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.active {
+  border: 2px solid #2dd4bf;
+}
+
+.heading {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 24px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.location {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.4;
+}

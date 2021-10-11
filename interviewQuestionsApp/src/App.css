@@ -11,4 +11,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Write you CSS here */
+.header-bg {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #180d5b;
+}
+.header-heading {
+  color: #ffffff;
+  font-family: 'Playfair Display';
+  font-size: 70px;
+  text-align: center;
+  width: 40%;
+  align-self: center;
+}
+.header-image {
+  width: 400px;
+}

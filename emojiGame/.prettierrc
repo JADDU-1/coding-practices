@@ -7,6 +7,14 @@
   "jsxBracketSameLine": false,
   "jsxSingleQuote": false,
   "printWidth": 80,
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "printWidth": 1000
+      }
+    }
+  ],
   "proseWrap": "always",
   "quoteProps": "as-needed",
   "requirePragma": false,

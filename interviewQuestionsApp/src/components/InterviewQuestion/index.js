@@ -1,58 +1,46 @@
-import {Component} from 'react'
 import './index.css'
 
-class Filters extends Component {
-  state = {status: false}
+const InterviewQuestion = props => {
+  const {details, showId, changeShow} = props
 
-  onChangeStatus = () => {
-    const {status} = this.state
-    this.setState({status: !status})
+  const {id, questionText, answerText, language, difficultyLevel} = details
+
+  const showAnswer = () => {
+    changeShow(id)
   }
 
-  getButton = () => {
-    const {status} = this.state
-    const button = status ? (
-      <button
-        type="button"
-        className="answerButton"
-        onClick={this.onChangeStatus}
-      >
-        <span className="buttonText">Hide</span>
-        <img
-          alt="up arrow"
-          src="https://assets.ccbp.in/frontend/react-js/up-arrow.png"
-        />
+  return (
+    <div className="question-card">
+      <div className="tag-card">
+        <span className={`question-filter ${difficultyLevel.toLowerCase()}`}>
+          {difficultyLevel}
+        </span>
+        <span className={`question-filter ${language.toLowerCase()}`}>
+          {language}
+        </span>
+      </div>
+      <h1 className="question">{questionText}</h1>
+
+      <button className="button" type="button" onClick={showAnswer}>
+        {!showId.includes(id) ? 'Show' : 'Hide'}
+
+        {!showId.includes(id) ? (
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/down-arrow.png"
+            alt="down arrow"
+            className="arrow"
+          />
+        ) : (
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/up-arrow.png"
+            alt="up arrow"
+            className="arrow"
+          />
+        )}
       </button>
-    ) : (
-      <button
-        type="button"
-        className="answerButton"
-        onClick={this.onChangeStatus}
-      >
-        <span className="buttonText">Show</span>
-        <img
-          alt="down arrow"
-          src="https://assets.ccbp.in/frontend/react-js/down-arrow.png"
-        />
-      </button>
-    )
-    return button
-  }
-
-  render() {
-    const {eachItem} = this.props
-    const {status} = this.state
-    const {id, questionText, answerText, language, difficultyLevel} = eachItem
-    return (
-      <li id={id} className="list-item">
-        <span className={difficultyLevel.toLowerCase()}>{difficultyLevel}</span>
-        <span className={language.toLowerCase()}>{language}</span>
-        <h2>{questionText}</h2>
-        {this.getButton()}
-        {status && <p>{answerText}</p>}
-      </li>
-    )
-  }
+      {showId.includes(id) && <p className="answer">{answerText}</p>}
+    </div>
+  )
 }
 
-export default Filters
+export default InterviewQuestion

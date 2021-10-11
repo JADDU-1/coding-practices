@@ -5,9 +5,11 @@
   align-items: center;
   height: 70vh;
 }
+
 .about-img {
   width: 150px;
 }
+
 .about-heading {
   font-family: 'Roboto';
   font-weight: 500;
@@ -20,6 +22,7 @@
     font-size: 48px;
   }
 }
+
 .about-paragraph {
   font-family: 'Roboto';
   font-size: 20px;

@@ -1,92 +1,97 @@
 import {Component} from 'react'
 import './index.css'
-import Filters from '../Filters/index'
-import InterviewQuestion from '../InterviewQuestion/index'
+import Filters from '../Filters'
+import InterviewQuestion from '../InterviewQuestion'
 
 class InterviewQuestionsApp extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      questionsList: [],
-      levelsDataList: [],
-      categoryDataList: [],
-      selectedCategory: 'ALL',
-      selectedDifficulty: 'ALL',
-    }
+  state = {
+    showId: [],
+    languageFilter: 'ALL',
+    levelFilter: 'ALL',
   }
 
-  componentDidMount() {
-    const {questionsData, categoryData, levelsData} = this.props
-    this.setState({
-      questionsList: questionsData,
-      levelsDataList: levelsData,
-      categoryDataList: categoryData,
-    })
+  updateLanguageFilter = value => {
+    this.setState({languageFilter: value})
   }
 
-  getUpdatedList = () => {
-    const {questionsList, selectedCategory, selectedDifficulty} = this.state
+  updateLevelFilter = value => {
+    this.setState({levelFilter: value})
+  }
 
-    let filteredData = ''
-
-    if (selectedCategory === 'ALL' && selectedDifficulty === 'ALL') {
-      filteredData = questionsList
-    } else if (selectedCategory !== 'ALL' && selectedDifficulty === 'ALL') {
-      filteredData = questionsList.filter(
-        eachItem => eachItem.language === selectedCategory,
-      )
-    } else if (selectedCategory === 'ALL' && selectedDifficulty !== 'ALL') {
-      filteredData = questionsList.filter(
-        eachItem => eachItem.difficultyLevel === selectedDifficulty,
-      )
+  changeShow = id => {
+    const {showId} = this.state
+    if (showId.includes(id)) {
+      this.setState(prevState => ({
+        showId: prevState.showId.filter(each => each !== id),
+      }))
     } else {
-      filteredData = questionsList.filter(
-        eachItem =>
-          eachItem.difficultyLevel === selectedDifficulty &&
-          eachItem.language === selectedCategory,
-      )
+      this.setState(prevState => ({showId: [...prevState.showId, id]}))
     }
-
-    return filteredData
-  }
-
-  onChangeSelectedCategory = category => {
-    this.setState({selectedCategory: category})
-  }
-
-  onChangeSelectedDifficulty = level => {
-    this.setState({selectedDifficulty: level})
   }
 
   render() {
-    const {categoryDataList, levelsDataList} = this.state
+    const {categoryData, levelsData, questionsData} = this.props
+    const {showId, languageFilter, levelFilter} = this.state
+    let filteredQuestionsData = questionsData
+    if (languageFilter !== 'ALL' || levelFilter !== 'ALL') {
+      filteredQuestionsData = questionsData.filter(each => {
+        if (languageFilter !== 'ALL' && levelFilter !== 'ALL') {
+          return (
+            each.language === languageFilter &&
+            each.difficultyLevel === levelFilter
+          )
+        }
+        if (languageFilter === 'ALL') {
+          return each.difficultyLevel === levelFilter
+        }
+        if (levelFilter === 'ALL') {
+          return each.language === languageFilter
+        }
+        return true
+      })
+    }
 
     return (
-      <div className="bg-container">
-        <div className="top-container">
-          <h1 className="heading">30 seconds of interviews</h1>
+      <div>
+        <div className="header-bg">
+          <h1 className="header-heading">30 Seconds of Interviews</h1>
           <img
-            alt="interview"
-            className="top-image"
             src="https://assets.ccbp.in/frontend/react-js/interview-questions-img.png"
+            alt="bg"
+            className="header-image"
           />
         </div>
-        <div className="inner-container">
-          <Filters
-            categoryDataList={categoryDataList}
-            levelsDataList={levelsDataList}
-            onChangeSelectedCategory={this.onChangeSelectedCategory}
-            onChangeSelectedDifficulty={this.onChangeSelectedDifficulty}
-          />
-          <ul className="questions-list">
-            {this.getUpdatedList().map(eachItem => (
+        <div className="footer">
+          <div className="filters-container">
+            <div className="each-filter">
+              <p className="filter-name">LANGUAGE</p>
+              <Filters
+                details={categoryData}
+                type="language"
+                updateLanguageFilter={this.updateLanguageFilter}
+                updateLevelFilter={this.updateLevelFilter}
+              />
+            </div>
+            <div className="each-filter">
+              <p className="filter-name">DIFFICULTY LEVEL</p>
+              <Filters
+                details={levelsData}
+                type="level"
+                updateLanguageFilter={this.updateLanguageFilter}
+                updateLevelFilter={this.updateLevelFilter}
+              />
+            </div>
+          </div>
+          <div className="questions-container">
+            {filteredQuestionsData.map(each => (
               <InterviewQuestion
-                key={eachItem.id}
-                id={eachItem.id}
-                eachItem={eachItem}
+                key={each.id}
+                details={each}
+                showId={showId}
+                changeShow={this.changeShow}
               />
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     )

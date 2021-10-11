@@ -31,6 +31,15 @@
   font-weight: bold;
 }
 
+.nav-items-list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.link-item {
+  list-style-type: none;
+}
+
 .route-link {
   color: #12022f;
   font-family: 'Roboto';

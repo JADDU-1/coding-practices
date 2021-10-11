@@ -1,68 +1,62 @@
-.list-item {
-  box-shadow: 0 4px 8px 0 #cbd2d9, 0 6px 20px 0 #cbd2d9;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 15px;
+.question-card {
+  box-shadow: 1px 1px 5px 1px #9aa5b1;
+  border: 1px solid #cbd2d9;
   border-radius: 10px;
+  margin-bottom: 15px;
+  margin-right: 50px;
+  padding: 15px;
 }
-
-.answerButton {
-  border-color: #cbd2d9;
-  padding: 5px;
+.tag-card {
+  display: flex;
+}
+.question-filter {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 500;
   border-radius: 8px;
-  background-color: #ffffff;
+  margin-right: 15px;
 }
-.buttonText {
-  color: #9aa5b1;
-  margin-right: 8px;
-}
-
 .easy {
-  color: #16a34a;
-  padding: 8px;
   background-color: #16a34a16;
-  border-radius: 15px;
-  font-size: 12px;
-  margin-right: 6px;
+  color: #16a34a;
 }
-
 .medium {
-  color: #d97706;
-  padding: 8px;
   background-color: #d9770616;
-  border-radius: 15px;
-  font-size: 12px;
-  margin-right: 6px;
+  color: #d97706;
 }
 .hard {
   color: #dc2626;
-  padding: 8px;
-  background-color: #db277716;
-  border-radius: 15px;
-  font-size: 12px;
-  margin-right: 6px;
+  background-color: #dc262616;
 }
 .html {
-  color: #dc2626;
-  padding: 8px;
-  background-color: #db277716;
-  border-radius: 15px;
-  font-size: 12px;
-  margin-right: 6px;
+  color: #0284c7;
+  background-color: #0284c716;
 }
 .css {
   color: #9333ea;
-  padding: 8px;
   background-color: #9333ea16;
-  border-radius: 15px;
-  font-size: 12px;
-  margin-right: 6px;
 }
 .javascript {
-  color: #db2777;
-  padding: 8px;
-  background-color: #db277716;
-  border-radius: 15px;
-  font-size: 12px;
-  margin-right: 6px;
+  color: #0f172a;
+  background-color: #0f172a16;
+}
+.question {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.button {
+  background-color: transparent;
+  color: #7b8794;
+  font-weight: bold;
+  border: 1px solid #cbd2d9;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.arrow {
+  width: 10px;
+  height: 8px;
+  margin-top: 5px;
+  margin-left: 3px;
 }

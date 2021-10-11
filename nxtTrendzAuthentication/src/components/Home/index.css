@@ -1,50 +1,35 @@
-.bg-home {
-  height: 100vh;
-  padding: 10px;
+/* Write your CSS code here */
+.mainContainer {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh;
 }
-
-.home-page-inner-container {
+.homeContentCon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80%;
 }
-
-/* * {
-  border: 1px solid red;
-} */
-
-.shop-now {
-  background-color: #0967d2;
-  color: #ffffff;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 20px;
-  outline: none;
-  width: 120px;
-}
-
-.paragraph {
-  color: #64748b;
-  font-size: 20px;
-}
-
-.text-container {
+.homeContentCon {
   display: flex;
   flex-direction: column;
-
-  width: 50%;
+  align-items: center;
 }
-
-.home-page-image {
-  width: 45%;
-  text-align: right;
+.mainHeading {
+  color: #1e293b;
+  font-family: 'Roboto';
 }
-
-.man-image {
+.description {
+  color: #64748b;
+  font-family: 'Roboto';
 }
-
-.home-page-heading {
-  font-size: 50px;
+.shopNowBtn {
+  background-color: #0b69ff;
+  border: 0px;
+  color: white;
+  padding: 10px;
+  font-family: 'Roboto';
+}
+.trendsImg {
+  height: 80%;
+  width: 100%;
 }

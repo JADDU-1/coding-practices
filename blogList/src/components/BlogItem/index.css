@@ -1,1 +1,19 @@
 /* Write your CSS code here */
+.blog {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e7e5ea;
+  width: 100%;
+}
+.post-date-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-heading {
+  color: #12022f;
+}
+.post-time {
+  color: #9aa5b1;
+}

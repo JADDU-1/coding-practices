@@ -1,20 +1,17 @@
-import {Component} from 'react'
+// Write your JS code here
+
 import './index.css'
 
-class UserInfo extends Component {
-  render() {
-    const {eachItem, length} = this.props
-    return (
-      <li id={eachItem.id} className="listItem">
-        <div className="titleAndDate">
-          <h3>{eachItem.title}</h3>
-          <p className="changeTextColor">{eachItem.publishedDate}</p>
-        </div>
-        <p className="changeTextColor">{eachItem.description}</p>
-        {length !== eachItem.id && <hr />}
-      </li>
-    )
-  }
-}
+const UserInfo = () => (
+  <div className="user-info-container">
+    <img
+      src="https://assets.ccbp.in/frontend/react-js/profile-img.png"
+      className="profile-img"
+      alt="profile"
+    />
+    <h1 className="name-heading">Wade Warren</h1>
+    <p className="role">Software Developer at UK</p>
+  </div>
+)
 
 export default UserInfo

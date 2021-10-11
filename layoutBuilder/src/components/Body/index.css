@@ -1,0 +1,37 @@
+.body-container {
+  width: 100%;
+  display: flex;
+}
+.left-nav-container {
+  width: 30%;
+  padding: 30px;
+  background-color: #cbd5e1;
+}
+
+.content-container {
+  min-width: 40%;
+  flex-grow: 1;
+  background-color: #f1f5f9;
+  padding: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.right-nav-container {
+  width: 30%;
+  background-color: #cbd5e1;
+  padding: 30px;
+}
+
+.ad-container {
+  border: 1px solid #64748b;
+  margin-bottom: 10px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-styles {
+  list-style-type: none;
+  padding-left: 0px;
+}

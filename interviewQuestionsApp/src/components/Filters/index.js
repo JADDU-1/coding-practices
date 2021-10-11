@@ -1,63 +1,35 @@
-import {Component} from 'react'
 import './index.css'
 
-class Filters extends Component {
-  changeCategory = event => {
-    const {onChangeSelectedCategory} = this.props
-    onChangeSelectedCategory(event.target.value)
+const Filters = props => {
+  const {details, type, updateLanguageFilter, updateLevelFilter} = props
+
+  const getLanguageFilter = event => {
+    console.log(event.target.value)
+    updateLanguageFilter(event.target.value)
   }
 
-  changeLevel = event => {
-    const {onChangeSelectedDifficulty} = this.props
-    onChangeSelectedDifficulty(event.target.value)
+  const getLevelFilter = event => {
+    console.log(event.target.value)
+    updateLevelFilter(event.target.value)
   }
 
-  render() {
-    const {categoryDataList, levelsDataList} = this.props
-
-    return (
-      <div className="filter-container">
-        <div className="selector-container">
-          <label className="label-text" htmlFor="language">
-            LANGUAGE
-          </label>
-          <br />
-          <select
-            className="selector-styles"
-            id="language"
-            onChange={this.changeCategory}
-          >
-            {categoryDataList.map(eachItem => (
-              <option
-                key={eachItem.id}
-                id={eachItem.id}
-                value={eachItem.language}
-              >
-                {eachItem.language}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="selector-container">
-          <label className="label-text" htmlFor="level">
-            DIFFICULT LEVEL
-          </label>
-          <br />
-          <select
-            className="selector-styles"
-            id="level"
-            onChange={this.changeLevel}
-          >
-            {levelsDataList.map(eachItem => (
-              <option key={eachItem.id} id={eachItem.id} value={eachItem.level}>
-                {eachItem.level}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-    )
-  }
+  return (
+    <select
+      className="selector"
+      onChange={type === 'language' ? getLanguageFilter : getLevelFilter}
+    >
+      {type === 'language'
+        ? details.map(each => (
+            <option key={each.id} value={each.language}>
+              {each.language}
+            </option>
+          ))
+        : details.map(each => (
+            <option key={each.id} value={each.level}>
+              {each.level}
+            </option>
+          ))}
+    </select>
+  )
 }
-
 export default Filters

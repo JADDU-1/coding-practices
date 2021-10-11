@@ -1,98 +1,60 @@
-.comments-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-}
-
-.comments-heading {
-  font-family: 'Roboto';
-  font-size: 50px;
-  font-weight: 600;
-  color: #1e293b;
-
-  padding-top: 20px;
-  width: 80vw;
-}
-
-.upper-section {
-  width: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.content-card {
-  margin-right: 30px;
-  flex-grow: 1;
-}
-
-.comments-para {
-  font-family: 'Roboto';
-  font-size: 14px;
-  font-weight: 600;
-  color: #475569;
-}
-
-.comments-form {
-}
-
-.name-input {
-  font-family: 'Roboto';
-  font-size: 15px;
-  font-weight: 00;
-  color: #475569;
-}
-
-.btn {
-  border-width: 0px;
-  background-color: #0284c7;
-  color: #ffffff;
-  border-radius: 3px;
-  height: 28px;
-  cursor: pointer;
-  outline: none;
-  margin-top: 20px;
-}
-.img {
-  flex-grow: 1;
-  width: 80px;
-}
-
-.line-ele {
-  width: 80%;
-}
-
-.heading1 {
-  font-family: 'Roboto';
-  font-size: 14px;
-  font-weight: 600;
-  color: #475569;
-}
-.span-ele {
-  background-color: #0284c7;
-  color: #ffffff;
-  font-family: 'Roboto';
-
-  text-align: center;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-right: 10px;
-  border-radius: 3px;
+/* Write your CSS here */
+.background-container {
+  background-color: #dee0e3;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
-.lower-section {
-  width: 80vw;
+.comments-image {
+  height: 220px;
+}
+.comments-container {
+  width: 80%;
   display: flex;
+  justify-content: space-between;
 }
-
-.ul-ele {
-  padding-inline-start: 0px;
-
-  width: 80vw;
+.input-value {
+  margin-bottom: 10px;
+  height: 30px;
+  width: 220px;
+  padding: 2px;
+  outline: none;
+  border: 1px solid #cbd2d9;
+  background-color: transparent;
+}
+.textarea-size {
+  outline: none;
+  width: 220px;
+  padding: 2px;
+  border: 1px solid #cbd2d9;
+  background-color: transparent;
+  font-family: 'Roboto';
+}
+.comments-container {
+  text-align: start;
+}
+.list-item-container {
+  width: 90%;
+}
+.span-container {
+  background-color: #0284c7;
+  height: 8px;
+  padding: 5px;
+  border-radius: 2px;
+  color: #cbd2d9;
+  margin-right: 3px;
+  font-size: 10px;
+}
+.comments-heading {
+  font-family: 'Roboto';
+  font-size: 10px;
+  color: #64748b;
+}
+.app-heading {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 48px;
+  margin-bottom: 12px;
 }

@@ -1,81 +1,64 @@
+// Write your code here
 import {formatDistanceToNow} from 'date-fns'
+
 import './index.css'
 
 const CommentItem = props => {
-  const {
-    commentsList,
-    toggleLikeStatus,
-    toggleLikeButton,
-    deleteComment,
-  } = props
+  const {commentDetails, deleteComment, toggleIsLiked} = props
+  const {id, name, comment, isLiked, date, initialClassName} = commentDetails
 
-  const {id, name, comment, isLiked} = commentsList
-
-  const profile = name[0].toUpperCase()
-
-  const liked =
-    'https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png'
-  const unliked =
-    'https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png'
-
-  const img = isLiked ? liked : unliked
-
-  const onLikedORDislike = () => {
-    toggleLikeStatus(id)
-  }
-  const colorChange = isLiked ? 'blue' : 'like-para'
-
-  const likeButton = () => {
-    toggleLikeButton(id)
-  }
-
-  const onDelete = () => {
+  const onClickDeleteIcon = () => {
     deleteComment(id)
   }
 
+  const firstLetter = name.slice(0, 1)
+
+  const LikedImage = isLiked
+    ? 'https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png'
+    : 'https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png'
+
+  const LikedText = isLiked ? 'like-paragraph' : 'unlike-paragraph'
+
+  const postedTime = formatDistanceToNow(date)
+
+  const onClickLikeIcon = () => {
+    toggleIsLiked(id)
+  }
+
   return (
-    <li className="li-ele">
-      <div className="align-round">
-        <div>
-          <div className="round">{profile}</div>
-        </div>
-
-        <div className="align-div">
-          <div className="comment-card">
-            <h1 className="heading2">{name}</h1>
-            <p className="para5"> {formatDistanceToNow(new Date())}</p>
-          </div>
-          <p className="paragraph">{comment}</p>
-        </div>
+    <li className="comment-section">
+      <div className="heading-container ">
+        <h1 className={`first-letter ${initialClassName}`}>{firstLetter}</h1>
+        <p className="name-paragraph">{name}</p>
+        <p className="posted-paragraph">{postedTime} ago</p>
       </div>
-      <div className="down-div">
-        <img
-          src={img}
-          className="like-image"
-          alt="like"
-          onClick={onLikedORDislike}
-        />
-        <div className="like-delete-container">
-          <div>
-            <button className={colorChange} onClick={likeButton} type="button">
-              Like
-            </button>
-          </div>
-
+      <p className="comment-paragraph">{comment}</p>
+      <div className="bottom-container">
+        <div className="like-container">
           <button
-            className="delete-container"
             type="button"
-            onClick={onDelete}
-            testid="delete"
+            className="delete-button"
+            onClick={onClickLikeIcon}
           >
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/comments-app/delete-img.png"
-              alt="delete"
-            />
+            <img src={LikedImage} alt="like" className="image-icon" />
           </button>
+          <p className={LikedText}>Like</p>
         </div>
+        <button
+          type="button"
+          className="delete-button"
+          testid="delete"
+          onClick={onClickDeleteIcon}
+        >
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/comments-app/delete-img.png"
+            alt="delete"
+            className="image-icon"
+          />
+        </button>
       </div>
     </li>
   )
 }
+
 export default CommentItem

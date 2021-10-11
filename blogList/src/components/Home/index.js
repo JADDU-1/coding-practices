@@ -1,7 +1,10 @@
-import UserInfo from '../UserInfo/index'
+import UserInfo from '../UserInfo'
+
+import BlogList from '../BlogList'
+
 import './index.css'
 
-const blogsData = [
+const blogsList = [
   {
     id: 1,
     title: 'My first post',
@@ -37,24 +40,8 @@ const blogsData = [
 ]
 const Home = () => (
   <div className="home-container">
-    <div className="profile-container">
-      <img
-        className="person"
-        src="https://assets.ccbp.in/frontend/react-js/profile-img.png"
-        alt="profile pic"
-      />
-      <h2>Wade Warren</h2>
-      <p className="changeTextColor">Software developer at UK</p>
-    </div>
-    <ul className="list-container">
-      {blogsData.map(eachItem => (
-        <UserInfo
-          key={eachItem.id}
-          eachItem={eachItem}
-          length={blogsData.length}
-        />
-      ))}
-    </ul>
+    <UserInfo />
+    <BlogList blogsList={blogsList} />
   </div>
 )
 

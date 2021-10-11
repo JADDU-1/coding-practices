@@ -1,28 +1,24 @@
-import {Component} from 'react'
 import './index.css'
 
-class Header extends Component {
-  render() {
-    return (
-      <div className="header-container">
-        <div className="image-container">
-          <img
-            className="header-image"
-            alt="website logo"
-            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-          />
-        </div>
-        <ul className="options">
-          <li>Home</li>
-          <li>Products</li>
-          <li>Cart</li>
-          <button className="logout-button" type="button">
-            Logout
-          </button>
-        </ul>
-      </div>
-    )
-  }
-}
-
+const Header = () => (
+  <header className="headerCon">
+    <div className="logoCon">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
+        alt="website logo"
+        className="logoImg"
+      />
+    </div>
+    <ul className="routLinksCon">
+      <li className="routsTxt">Home</li>
+      <li className="routsTxt">Products</li>
+      <li className="routsTxt">Cart</li>
+      <li className="routsTxt">
+        <button className="logoutBtn" type="button">
+          Logout
+        </button>
+      </li>
+    </ul>
+  </header>
+)
 export default Header

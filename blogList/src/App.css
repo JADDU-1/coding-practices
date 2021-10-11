@@ -19,12 +19,18 @@ body {
   margin-top: 50px;
 }
 
-.app-card {
+.responsive-container {
   display: flex;
   flex-direction: column;
   width: 80%;
   border: 4px solid #551e53;
   border-radius: 12px;
+}
+
+@media (max-width: 576px) {
+  .responsive-container {
+    width: 85%;
+  }
 }
 
 .app-body {

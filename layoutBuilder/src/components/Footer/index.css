@@ -1,0 +1,10 @@
+.heading-container {
+  width: 100%;
+  background-color: #cbd5e1;
+  padding: 40px;
+  margin-top: 10px;
+}
+.heading {
+  color: #475569;
+  font-size: 25px;
+}

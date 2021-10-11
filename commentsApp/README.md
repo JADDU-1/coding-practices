@@ -1,4 +1,4 @@
-In this practice let's build a **Comments App** by applying the concepts we have learned till now.
+In this project, let's build a **Comments App** by applying the concepts we have learned till now.
 
 ### Refer to the image below:
 
@@ -8,60 +8,47 @@ In this practice let's build a **Comments App** by applying the concepts we have
 </div>
 <br/>
 
-#### Design Files
+### Design Files
 
 <details>
-<summary>Click to view the Design Files</summary>
+<summary>Click to view</summary>
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/comments-app-sm-output-v0.png)
+- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/comments-app-sm-output-v2.png)
 - [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/comments-app-lg-output-v0.png)
 
 </details>
 
-### Project Set Up Instructions
+### Set Up Instructions
 
 <details>
-<summary>Click to view the Set Up Instructions</summary>
+<summary>Click to view</summary>
 
 - Download dependencies by running `npm install`
 - Start up the app using `npm start`
 </details>
 
-### Project Completion Instructions
+### Completion Instructions
 
 <details>
-<summary>Click to view the Functionality to be added</summary>
-
-#### Add Functionality
+<summary>Functionality to be added</summary>
+<br/>
 
 The app must have the following functionalities
 
-- Initially the list of comments should empty and the values for name and comment input should be empty.
-- When non-empty values are entered and **Add Comment** button is clicked,
-  - The value of the input elements for name and comment should be updated to their initial values.
-  - A new comment should be added to the list of comments.
-  - The comments count should be incremented by 1.
-- When the **Like** button of a comment is clicked, the HTML image element for like should be changed to the **filled** like image.
-- When the **Delete** button of a comment is clicked, the comment should be deleted from the list of comments.
-- When the **Delete** button of a comment is clicked, the comments count should be decremented by 1.
+- Initially, the list of comments should be zero and the inputs fields should be empty
+- When non-empty values are provided and **Add Comment** button is clicked,
+  - A new comment should be added to the list of comments
+  - The comments count should be incremented by one
+  - The value of the input fields for name and comment should be updated to their initial values
+- When the **Like** button of a comment is clicked, if the image for **Like** is
+  - [Like](https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png) image, then it should be changed to the [Liked](https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png) image
+  - [Liked](https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png) image, then it should be changed to the [Like](https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png) image
+- When the **Delete** button of a comment is clicked, the comment should be deleted from the list of comments and the comments count should be decremented by one
 
 </details>
 
 <details>
-<summary>Click to view the Implementation Files</summary>
-
-- Your task is to complete the implementation of
-  - `src/components/Comments/index.js`
-  - `src/components/Comments/index.css`
-  - `src/components/CommentItem/index.js`
-  - `src/components/CommentItem/index.css`
-
-</details>
-
-<details>
-<summary>Click to view the Components Structure</summary>
-
-#### Components Structure
+<summary>Components Structure</summary>
 
 <br/>
 <div style="text-align: center;">
@@ -71,52 +58,67 @@ The app must have the following functionalities
 
 </details>
 
+<details>
+<summary>Implementation Files</summary>
+<br/>
+
+Use these files to complete the implementation:
+
+- `src/components/Comments/index.js`
+- `src/components/Comments/index.css`
+- `src/components/CommentItem/index.js`
+- `src/components/CommentItem/index.css`
+</details>
+
 ### Quick Tips
 
 <details>
-<summary>Click to view Quick Tips</summary>
+<summary>Click to view</summary>
+<br>
 
 - The `formatDistanceToNow` function in the **date-fns** package is used to return the gap between the given date and now in words.
 
 ```js
 import {formatDistanceToNow} from 'date-fns'
 
-console.log(formatDistanceToNow(new Date())) // less than a minute
+console.log(formatDistanceToNow(new Date())); // less than a minute
 ```
 
 </details>
 
-> #### Important Note
->
-> <details open>
-> <summary>Click to view Important Note Points</summary>
->
-> **The following HTML attributes are required for the HTML for the tests to pass**
->
-> - The **Like** image for each comment should have the alt attribute value as `like`
-> - The **Delete** button for each comment should have the testid as `delete`
-> - To display how much time ago the comment was posted we will use `formatDistanceToNow` function from **date-fns** package
->
-> </details>
+### Important Note
+
+<details>
+<summary>Click to view</summary>
+
+<br/>
+
+**The following instructions are required for the tests to pass**
+
+- HTML input element for name should have the placeholder as **Your Name**
+- HTML textarea element for comment should have the placeholder as **Your Comment**
+- The **Like** image for each comment should have the alt as **like**
+- The **Delete** button for each comment should have the testid as **delete**
+- To display how much time ago the comment was posted, we will use `formatDistanceToNow` function from **date-fns** package
+
+</details>
 
 ### Resources
 
 <details>
 <summary>Image URLs</summary>
 
-#### Images
-
 - [https://assets.ccbp.in/frontend/react-js/comments-app/comments-img.png](https://assets.ccbp.in/frontend/react-js/comments-app/comments-img.png) alt should be **comments**
-- [https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png](https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png)
-- [https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png](https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png)
 - [https://assets.ccbp.in/frontend/react-js/comments-app/delete-img.png](https://assets.ccbp.in/frontend/react-js/comments-app/delete-img.png) alt should be **delete**
+- [https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png](https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png)
+- [https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png](https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png)
 
 </details>
 
 <details>
 <summary>Colors</summary>
 
-#### Colors
+<br/>
 
 <div style="background-color: #dee0e3; width: 150px; padding: 10px; color: black">Hex: #dee0e3</div>
 <div style="background-color: #1e293b; width: 150px; padding: 10px; color: white">Hex: #1e293b</div>
@@ -134,12 +136,14 @@ console.log(formatDistanceToNow(new Date())) // less than a minute
 <div style="background-color: #64748b; width: 150px; padding: 10px; color: white">Hex: #64748b</div>
 <div style="background-color: #7e858e; width: 150px; padding: 10px; color: white">Hex: #7e858e</div>
 
-<br/>
 </details>
 
-#### Font-families
+<details>
+<summary>Font-families</summary>
 
 - Roboto
+
+</details>
 
 > ### _Things to Keep in Mind_
 >

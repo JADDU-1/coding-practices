@@ -1,71 +1,53 @@
-.bg-login-page-container {
-  height: 100vh;
-  width: 100vw;
+/* Write your CSS code here */
+.loginMainCon {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  min-height: 100vh;
 }
-
-.logo {
-  height: 300px;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
+.loginImg {
+  height: 80vh;
   width: 100%;
-}
-
-.login-button {
-  background-color: #0967d2;
-  color: #ffffff;
   padding: 10px;
-  border: none;
-  border-radius: 10px;
-  width: 100%;
-  font-size: 20px;
-  outline: none;
 }
-
-.error-message {
-  color: #ff0b37;
+.formMainCon {
+  padding: 15px;
 }
-
-.login-card {
-  display: flex;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  height: 40vh;
-  box-shadow: 2px 2px 12px 12px #e2e8f0;
-  justify-content: space-around;
+.formElCon {
   padding: 20px;
-  border-radius: 10px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
-
-.card-image {
-  height: 50px;
-  width: 200px;
+.formImgCon {
+  text-align: center;
 }
-
-.labe-name {
-  font-weight: 900;
-  color: #1e293b;
-  font-size: 15px;
+.formImg {
+  height: 12px;
+  width: auto;
 }
-
-.input-element {
-  padding: 10px;
-  background-color: #e2e8f0;
-  border: none;
-  border-radius: 5px;
+.inputElDecor {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-family: 'Roboto';
+  margin-bottom: 5px;
+  width: 100px;
 }
-
-.button-container {
+.inputEl {
+  background-color: #d7dfe9;
+  border: 0px;
+  font-family: 'Roboto';
+  padding-left: 10px;
   width: 100%;
 }
-
-* {
-  font-family: Roboto;
+.loginBtn {
+  background-color: #0b69ff;
+  border: 0px;
+  color: white;
+  padding: 10px;
+  font-family: 'Roboto';
+  width: 100px;
 }

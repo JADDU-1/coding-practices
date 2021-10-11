@@ -1,33 +1,32 @@
-.header-container {
+/* Write your CSS code here */
+.headerCon {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  /* border: 1px solid red; */
+  width: 100vw;
+  height: auto;
 }
-
-.logout-button {
-  background-color: #0967d2;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  font-size: 15px;
-  outline: none;
-  width: 70px;
-  height: 30px;
+.logoCon {
+  padding: 3px;
 }
-
-.options {
-  width: 20%;
+.logoImg {
+  height: 10px;
+  width: 15px;
+}
+.routLinksCon {
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.routsTxt {
   color: #475569;
-  list-style-type: none;
+  font-family: 'Roboto';
 }
-
-.image-container {
-  flex-grow: 1;
-}
-
-.header-image {
-  height: 50px;
+.logoutBtn {
+  background-color: #0b69ff;
+  border: 0px;
+  color: white;
+  padding: 10px;
+  font-family: 'Roboto';
 }

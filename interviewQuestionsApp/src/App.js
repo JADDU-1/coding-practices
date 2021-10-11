@@ -1,5 +1,3 @@
-// import {Component} from 'react'
-
 import InterviewQuestionsApp from './components/InterviewQuestionsApp'
 import './App.css'
 
@@ -115,9 +113,9 @@ const categoryData = [
 
 const App = () => (
   <InterviewQuestionsApp
-    questionsData={questionsData}
-    levelsData={levelsData}
     categoryData={categoryData}
+    levelsData={levelsData}
+    questionsData={questionsData}
   />
 )
 
